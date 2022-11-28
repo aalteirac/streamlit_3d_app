@@ -1,6 +1,6 @@
 import streamlit as st
 import streamlit_3d as sd
-import pathlib
+
 
 if(st.session_state.get("coord") is not None):
         coords=st.session_state["coord"] 
@@ -19,7 +19,7 @@ st.markdown('''
     </style>
 ''', unsafe_allow_html=True)
 
-st.write("## 3D Annotations | Right-Click to Annotate")
+st.write("## Streamlit 3D Annotations | DblClick to Annotate")
 md=st.selectbox("3D Model:",["https://alteirac.com/models/helmet/scene.gltf","https://alteirac.com/models/engine/scene.gltf","https://alteirac.com/models/turbine/scene.gltf","https://alteirac.com/models/projector/scene.gltf","https://alteirac.com/models/car/scene.gltf","https://alteirac.com/models/captain/scene.gltf","https://alteirac.com/models/moto/scene.gltf"])
 value = sd.streamlit_3d(model=md)
 if value is not None:
