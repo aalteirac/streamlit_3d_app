@@ -27,6 +27,7 @@ if value is not None:
 st.table(coords)
 with st.expander("Code"):
     st.code(body=f'''
+
     # pip install streamlit-3d
     import streamlit as st 
     import streamlit_3d as sd
@@ -39,6 +40,6 @@ with st.expander("Code"):
                                             "data-position":{{"x":0.4595949207254826,"y":0.40998085773554555,"z":0.33846317660071373}},
                                             "data-normal":{{"x":-0.18705895743345607,"y":-0.3420641705224677,"z":0.9208697246020658}}}}
                                             ])
-    # if you simply want show the model:
+    # if you simply want to show the model:
     # value = sd.streamlit_3d(model=md)                                        
     st.write(value)''' ,language="python")
