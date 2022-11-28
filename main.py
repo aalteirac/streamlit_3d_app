@@ -26,7 +26,7 @@ if value is not None:
     coords.append(value) 
 st.table(coords)
 with st.expander("Code"):
-    st.code(body=f'''\
+    st.code(body=f'''
     # pip install streamlit-3d
     import streamlit as st 
     import streamlit_3d as sd
